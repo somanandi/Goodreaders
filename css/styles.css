@@ -1,0 +1,817 @@
+* {font-family: 'Roboto', sans-serif;}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.common-padding{
+    padding: 100px 0; 
+}
+.hr-tag {
+    width: 30%;
+    border: solid 1px black;
+}
+.header {
+    background-position: center;
+    background-image: url(../images/banner-bg.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 753px;
+}
+.header::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 19%);
+}
+/* navbar part css */
+.goodreaders-navbar {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/navbar-bg.jpg);
+    position: center;
+    background-size: cover;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #ff8900;
+}
+.navbar-toggler.button-light {
+    border: 2px solid #fff;
+}
+.goodreaders-navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+.nav-item {
+    padding: 0 10px;
+    margin: 0 8px;
+    font-size: 20px;
+    color: #ebe7e7;
+}
+.nav-link {
+    color: #ebe7e7;
+    font-weight: 500;
+}
+
+.btn-apply-now {
+    font-family: "Abril Fatface", cursive;
+    background-color: #ff8900;
+    color: #ebe7e7;
+    font-size: 18px;
+    font-weight: 600;
+    width: 120%;
+}
+.btn-apply-now-div {
+    margin-right: 20px;
+    padding-right: 20px;
+}
+/* footer part css */
+.footer {
+    background-image: url(../images/navbar-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.update {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ebe7e7;
+}
+.footer-subscribe {
+    display: flex;
+    
+}
+.footer-subscribe #staticEmail {
+    background-color: #ebe7e7;
+    color: rgb(129 31 170);
+}
+.btn-subscribe{
+    font-family: "Abril Fatface", cursive;
+    background-color: #ff8900;
+    color: #ebe7e7;
+    font-size: 18px;
+    font-weight: 600;
+    width: 60%;
+}
+.social-icon {
+    justify-content: center;
+    display: flex;
+    background: #ebe7e7;
+    box-shadow: 1px 1px 1px 2px #fff3;
+    width: 50%;
+}
+.social-icon a {
+    color: rgb(129 31 170);
+    padding: 5px;
+}
+.social-icon i {
+    font-size: 30px;
+    transition: 1s all;
+}
+.social-icon i:hover {
+    color: #ff8900;
+}
+
+/* banner left part css */
+.banner-left-text {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-top: 50px;
+    color: #ebe7e7;
+    position: relative;
+    z-index: 1;
+}
+/* banner right part css */
+.singup-form {
+    padding: 50px 0 0 25px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+.btn-singup {
+    font-family: "Abril Fatface", cursive;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px 1px rgb(129 31 170);
+    border: solid 2px rgba(255, 255, 255, 0.226);
+    transition: 1s ease-in-out;
+}
+.btn-singup a {
+    color: #ff8900;
+}
+.btn-singup:hover {
+    color: rgb(129 31 170); 
+    background-color: #fff; 
+    box-shadow: none;
+} 
+/* welcome to e-learning part css */
+.e-lerning-paragraph {
+    text-align: center;
+}
+.e-learning-text {
+    font-size: 15px;
+    width: 63%;
+    margin: auto;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.e-learning-details-block-text {
+    text-align: center;
+    font-size: 14px;
+}
+.e-learning-details-logo {
+    justify-content: center;
+}
+.e-learning-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding-bottom: 10px;
+}
+.e-learning-hr-tag {
+    width: 50%;
+    border: solid 1px black;
+}
+.e-learning-details-logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.e-learning-details-block-title {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(129 31 170);
+}
+.program-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.program-text {
+    font-size: 15px;
+    width: 65%;
+    margin: auto;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.program-padding {
+    padding: 30px;
+}
+/* execellent part css */
+.excellent-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(129 31 170);
+    text-align: center;
+}
+.excellent-text {
+    font-size: 18px;
+    margin: auto;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.excellent-icon-text {
+    padding-left: 20px;
+    font-size: 15px;
+}
+/* strive part css */
+.strive-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(129 31 170);
+    text-align: center;
+}
+.strive-text {
+    font-size: 18px;
+    margin: auto;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.strive-icon-text {
+    padding-left: 20px;
+    font-size: 15px;
+}
+/* education in life part css */
+.education-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(129 31 170);
+    text-align: center;
+}
+.education-text {
+    font-size: 18px;
+    margin: auto;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.education-icon-text {
+    padding-left: 20px;
+    font-size: 15px;
+}
+/* join our community */
+.community-paragraph {
+    text-align: center;
+}
+.community-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding-bottom: 10px;
+}
+.community-text {
+    font-size: 15px;
+}
+.community-btn-div {
+    text-align: center;
+    padding: 40px 0;
+}
+.btn-community {
+   font-family: "Abril Fatface", cursive;
+   font-weight: 600;
+   border: 2px solid rgb(129 31 170);
+   background: none;
+   font-size: 20px;
+   position: relative;
+   cursor: pointer;
+}
+.btn-community a {
+    color: rgb(129 31 170);
+}
+.btn-community::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: rgb(129 31 170);
+    z-index: -1;
+    transition: 1s;
+}
+.btn-community a:hover {
+    color: #fff;
+}
+.btn-community:hover::before {
+    height: 100%;
+ }
+
+/* about.html page css */
+.heading-name {
+    padding: 50px 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(129 31 170);
+}
+.accordion li {
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.167),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.32);
+    padding: 20px;
+}
+.accordion li label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color:rgb(129 31 170);
+    font-weight: 600;
+    cursor: pointer;
+}
+.accordion li label::before {
+    content: '+';
+    font-weight: 600;font-size: 18px;
+    color:rgb(129 31 170);
+    padding: 10px;
+}
+.accordion input[type='radio']{
+    display: none;
+}
+.accordion .content {
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordion input[type='radio']:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+/* choose-us part css */
+.choose-us {
+    background-image: url('../images/gray-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.choose-us-paragraph {
+    text-align: center;
+    padding: 50px 0;
+}
+.choose-us-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding-bottom: 10px;
+}
+.choose-us-text {
+    font-size: 15px;
+    width: 55%;
+    margin: auto;
+}
+
+
+
+/* teacher.html page css */
+/* teacher details part css */
+.teacher-details {
+    text-align: center;
+}
+.teacher-details-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding-bottom: 10px;
+}
+.teacher-text {
+    font-size: 15px;
+    width: 50%;
+    margin: auto;
+}
+.teacher-paragraph {
+    padding: 50px 0;
+    z-index: 1;
+    position: relative;
+}
+.teacher-div {
+    padding: 50px;
+    text-align: center;
+}
+.teacher-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(129 31 170);
+}
+.teacher-designation {
+    font-size: 16px;
+}
+.teacher-social-div {
+    display: flex;
+    justify-content: center;
+}
+.teacher-social-id a {
+    padding: 5px;
+    color: black;
+}
+.teacher-social-id a:hover {
+    color: #ebe7e7;
+}
+.teacher-info-details {
+    width: 280px;
+    height: 360px;
+    padding: 20px 40px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 1s ease-in-out;
+    box-shadow: 0 7px 10px #fff;
+}
+.teacher-info-details:hover {
+    transform: translateY(20px);
+}
+.teacher-info-details::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 31, 170, 0.215);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.teacher-info-details:hover::before {
+    opacity: 1;
+}
+.teacher-info-details img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.teacher-info {
+    position: relative;
+    z-index: 3;
+    opacity: 1;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.teacher-info-details:hover .teacher-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/* contact.html page css */
+/* contact form part css */
+.contact-form-padding {
+    padding-bottom: 10px;
+}
+.contact-form {
+    padding: 50px;
+    background-image: url(../images/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.contact-form::after {
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 100%;
+    top: 0;
+    left: 14px;
+    background-color: rgb(128 31 170 / 6%);
+    z-index: 0;
+}
+.form-part{
+    z-index: 1;
+    position: relative;
+}
+.form-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #ff8900;
+    padding-bottom: 10px;
+}
+.form-text {
+    font-size: 15px;
+    margin: auto;
+    color: #ebe7e7;
+    padding-bottom: 50px;
+}
+.contact-form-button-div {
+    padding-top: 15px;
+}
+.btn-contact-form {
+    font-family: "Abril Fatface", cursive;
+    font-size: 18px;
+    width: 35%;
+    font-weight: 600;
+    background-color: #ff8900;
+    color: #ebe7e7;
+    border: solid 2px rgb(129 31 170);
+    box-shadow: 1px 1px 2px 1px #ebe7e745;
+}
+.contact-hr-tag {
+    border: solid 1px black;
+    width: 60%;
+    margin-left: 0;
+}
+.contact-info-text {
+    font-size: 14px;
+}
+.direct-line {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(129 31 170);
+}
+.direct-line-phone {
+    font-size: 40px;
+    text-decoration: underline #ebe7e7;
+}
+.list {
+    padding: 50px 0;
+}
+.list li {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+/* courses.html page css */
+.search {
+    background-color: #ff8900;
+    height: 87px;
+    padding: 20px 0;
+}
+.btn-search {
+    font-family: "Abril Fatface", cursive;
+    font-size: 18px;
+    width: 50%;
+    font-weight: 600;
+    background-color: #ebe7e7;
+    color: rgb(129 31 170);
+    border: solid 2px rgb(129 31 170);
+    box-shadow: 1px 1px 2px 1px #ebe7e745;
+}
+.search-form {
+    text-align: center;
+    padding: 0 50px;
+    }
+.course-card-padding {
+    padding: 20px 20px;
+    }
+.our-courses {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding: 10px 0;
+    text-align: center;
+}
+.card-course-shadow {
+    box-shadow: 1px 1px 8px 1px #ebe7e745;
+    text-align: center;
+    }
+.card-course-shadow h5 {
+    color: rgb(129 31 170);
+    font-weight: 600;
+    }
+.card-course-shadow p {
+    font-size: 14px;
+    }
+.btn-course-apply {
+    font-family: "Abril Fatface", cursive;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    background:none;
+    color: #ff8900;
+    border: 2px solid rgb(129 31 170);
+    transition: 1s ease-in-out;
+}
+.btn-course-apply:hover {
+    color:rgb(129 31 170);
+    border: 2px solid #ff8900;
+    border-radius: 50%;
+}
+.courses-div {
+    background-color: rgb(129 31 170 / 21%);
+}
+.courses {
+    padding-bottom: 50px;
+}
+
+/* event page html */
+.event {
+   background-color:rgba(128, 31, 170, 0.256);
+   padding: 50px 0;
+}
+.event-paragraph {
+    text-align: center;
+}
+.event-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding-bottom: 10px;
+}
+.event-text {
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.event-date {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(129 31 170);
+    background-color: #fff;
+    border: 2px solid black;
+    height: 45px;
+    padding: 5px;
+}
+.event-activity {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(129 31 170);
+    background-color: #fff;
+    border: 2px solid black;
+    height: 45px;
+    padding: 5px;
+}
+
+/* admission.html page css */
+/* form right part css */
+.admission-form-section {
+    margin: 50px 0;
+}
+.admission-title {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8900;
+    padding: 50px 0;
+}
+.btn-admission {
+    font-family: "Abril Fatface", cursive;
+    font-size: 18px;
+    width: 100px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #ff8900;
+    border: solid 2px #ff8900;
+    box-shadow: 1px 1px 6px 1px #ebe7e745;
+}
+
+/* news.html page css */
+/* create resume part css */
+.resume-paragraph {
+    padding-top: 50px;
+}
+.resume-img {
+    padding-top: 50px;
+}
+.resume-heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #ff8900;
+    padding-bottom: 10px;
+}
+.resume-text {
+    font-size: 15px;
+}
+.resume-button-div {
+    padding: 20px 0;
+}
+.btn-resume {
+    font-family: "Abril Fatface", cursive;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    background: none;
+    width: 14%;
+    height: 50px;
+}
+.btn-resume:hover {
+    color: tomato;
+}
+.btn-resume::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background-color: rgb(129 31 170);
+    transition: 1s;
+    height: 100%;
+    left: 0;
+    width: 100%;
+}
+.btn-resume:hover::before {
+    height: 0;
+}
+
+/* iphone SE Responsive */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .common-padding {
+        padding: 50px 0;
+    }
+    .hr-tag {
+        width: 70%;
+    }
+/* header part css */
+.header {
+    height: 900px;
+}
+/* footer part css */
+.footer .social-icon {
+    padding: 10px;
+    width: 20%;
+}
+.btn-resume {
+    width: 40%;
+}
+/* banner part css */
+.banner-left-text {
+    font-size: 32px;
+}
+.singup-form {
+    padding: 20px;
+}
+.common-padding {
+    padding: 50px 0;
+}
+.community-text {
+    font-size: 13px;
+}
+/* e-learning part css */
+.e-learning-hr-tag {
+    width: 70%;
+}
+.e-learning-title {
+    font-size: 25px;
+}
+/* about.html page css */
+.choose-us-title {
+    font-size: 35px;
+}
+/* teacher.html page css */
+.teacher-info {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+/* course.html page css */
+.search {
+    height: 200px;
+}
+.courses-search-btn-div {
+    padding: 20px 0;
+}
+.btn-search {
+    width: 60%;
+}
+/* news page css */
+.btn-resume {
+    width: 40%;
+}
+/* contact.html page css */
+.form-heading {
+    font-size: 44px;
+}
+.direct-line-phone {
+    font-size: 30px;
+}
+.contact-hr-tag {
+    width: 80%;
+}
+.form-heading {
+    font-size: 40px;
+}
+}

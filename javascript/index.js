@@ -1,0 +1,1 @@
+onmouseoverOver="document.getElementById('e-learning-details-block-title').style.color='red'" 
