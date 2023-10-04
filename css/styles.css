@@ -6,11 +6,7 @@ a:hover {
     text-decoration: none;
 }
 .common-padding{
-    padding: 100px 0; 
-}
-.hr-tag {
-    width: 30%;
-    border: solid 1px black;
+    padding: 75px 0; 
 }
 .header {
     background-position: center;
@@ -33,12 +29,12 @@ a:hover {
 .goodreaders-navbar {
     position: relative;
     z-index: 1;
-    background-image: url(../images/navbar-bg.jpg);
-    position: center;
+    background-color: #fff;
+    height: 100px;
     background-size: cover;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #000000;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #ff8900;
@@ -106,22 +102,14 @@ a:hover {
 .social-icon {
     justify-content: center;
     display: flex;
-    background: #ebe7e7;
-    box-shadow: 1px 1px 1px 2px #fff3;
-    width: 50%;
 }
 .social-icon a {
-    color: rgb(129 31 170);
-    padding: 5px;
+    width: 40px;
 }
-.social-icon i {
-    font-size: 30px;
-    transition: 1s all;
+.social-icon-img {
+    background-color: #fff;
+    padding: 6px;
 }
-.social-icon i:hover {
-    color: #ff8900;
-}
-
 /* banner left part css */
 .banner-left-text {
     font-family: 'Roboto Slab', serif;
@@ -164,11 +152,8 @@ a:hover {
     text-align: center;
 }
 .e-learning-text {
-    font-size: 15px;
-    width: 63%;
-    margin: auto;
+    font-size: 17px;
     padding-bottom: 50px;
-    margin-bottom: 50px;
 }
 .e-learning-details-block-text {
     text-align: center;
@@ -182,11 +167,9 @@ a:hover {
     font-weight: 700;
     font-size: 40px;
     color: #ff8900;
-    padding-bottom: 10px;
-}
-.e-learning-hr-tag {
-    width: 50%;
-    border: solid 1px black;
+    padding-bottom: 20px;
+    text-decoration: underline #ff8900 2px;
+    text-underline-position: under;
 }
 .e-learning-details-logo {
     display: flex;
@@ -195,7 +178,7 @@ a:hover {
 }
 .e-learning-details-block-title {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     color: rgb(129 31 170);
 }
 .program-heading {
@@ -203,15 +186,19 @@ a:hover {
     font-weight: 700;
     font-size: 40px;
     color: #ff8900;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     text-align: center;
+    text-decoration: underline #ff8900 2px;
+    text-underline-position: under;
 }
 .program-text {
-    font-size: 15px;
-    width: 65%;
+    font-size: 17px;
+    text-align: center;
     margin: auto;
+    margin-bottom: 40px;
+}
+.program-common-padding {
     padding: 20px 0;
-    margin-bottom: 50px;
 }
 .program-padding {
     padding: 30px;
@@ -225,48 +212,12 @@ a:hover {
     text-align: center;
 }
 .excellent-text {
-    font-size: 18px;
+    font-size: 14px;
     margin: auto;
-    padding: 20px 0;
-    margin-bottom: 50px;
+    padding: 15px 0;
+    margin-bottom: 25px;
 }
 .excellent-icon-text {
-    padding-left: 20px;
-    font-size: 15px;
-}
-/* strive part css */
-.strive-heading {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: rgb(129 31 170);
-    text-align: center;
-}
-.strive-text {
-    font-size: 18px;
-    margin: auto;
-    padding: 20px 0;
-    margin-bottom: 50px;
-}
-.strive-icon-text {
-    padding-left: 20px;
-    font-size: 15px;
-}
-/* education in life part css */
-.education-heading {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: rgb(129 31 170);
-    text-align: center;
-}
-.education-text {
-    font-size: 18px;
-    margin: auto;
-    padding: 20px 0;
-    margin-bottom: 50px;
-}
-.education-icon-text {
     padding-left: 20px;
     font-size: 15px;
 }
@@ -279,10 +230,12 @@ a:hover {
     font-weight: 700;
     font-size: 40px;
     color: #ff8900;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    text-decoration: underline #ff8900 2px;
+    text-underline-position: under;
 }
 .community-text {
-    font-size: 15px;
+    font-size: 17px;
 }
 .community-btn-div {
     text-align: center;
@@ -291,33 +244,32 @@ a:hover {
 .btn-community {
    font-family: "Abril Fatface", cursive;
    font-weight: 600;
-   border: 2px solid rgb(129 31 170);
-   background: none;
    font-size: 20px;
    position: relative;
    cursor: pointer;
-}
-.btn-community a {
-    color: rgb(129 31 170);
+   color: #fff;
+   background: none;
+   transition: 0.4s all ;
+   z-index: 9;
+   width: 15%;
+   height: 40px;
 }
 .btn-community::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 0;
+    height: 100%;
     background: rgb(129 31 170);
     z-index: -1;
-    transition: 1s;
-}
-.btn-community a:hover {
+    transition: 0.4s all ;
     color: #fff;
 }
-.btn-community:hover::before {
-    height: 100%;
- }
-
+.btn-community:hover {
+    color: rgb(129 31 170);
+  
+} 
 /* about.html page css */
 .heading-name {
     padding: 50px 0 0;
