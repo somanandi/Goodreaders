@@ -632,12 +632,21 @@ a:hover {
     .common-padding {
         padding: 50px 0;
     }
-    .hr-tag {
-        width: 70%;
-    }
 /* header part css */
 .header {
     height: 900px;
+}
+/* navbar part css */
+.goodreaders-navbar {
+    height: 113px;
+}
+.nav-item {
+    background-color: #fff;
+   
+}
+.goodreaders-navbar-nav {
+    position: absolute;
+    z-index: -1;
 }
 /* footer part css */
 .footer .social-icon {
@@ -650,6 +659,9 @@ a:hover {
 /* banner part css */
 .banner-left-text {
     font-size: 32px;
+    padding-top: 294px;
+    position: relative;
+    z-index: 5;
 }
 .singup-form {
     padding: 20px;
@@ -672,20 +684,14 @@ a:hover {
     font-size: 35px;
 }
 /* teacher.html page css */
+.teacher-details {
+    padding-top: 275px;
+}
 .teacher-info {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-/* course.html page css */
-.search {
-    height: 200px;
-}
-.courses-search-btn-div {
-    padding: 20px 0;
-}
-.btn-search {
-    width: 60%;
-}
+
 /* news page css */
 .btn-resume {
     width: 40%;
