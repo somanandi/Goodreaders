@@ -634,15 +634,14 @@ a:hover {
     }
 /* header part css */
 .header {
-    height: 900px;
+    height: 666px;
 }
 /* navbar part css */
 .goodreaders-navbar {
     height: 113px;
 }
 .nav-item {
-    background-color: #fff;
-   
+    background-color: #fff;  
 }
 .goodreaders-navbar-nav {
     position: absolute;
@@ -659,15 +658,15 @@ a:hover {
 /* banner part css */
 .banner-left-text {
     font-size: 32px;
-    padding-top: 294px;
+    padding: 0;
     position: relative;
     z-index: 5;
 }
 .singup-form {
-    padding: 20px;
+    padding: 10px;
 }
 .common-padding {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 .community-text {
     font-size: 13px;
