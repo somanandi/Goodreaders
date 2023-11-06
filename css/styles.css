@@ -33,10 +33,10 @@ a:hover {
     height: 100px;
     background-size: cover;
 }
-.navbar-light .navbar-nav .nav-link {
+.goodreaders-navbar .goodreaders-navbar-nav .nav-link {
     color: #000000;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.goodreaders-navbar .goodreaders-navbar-nav .nav-link:focus, .goodreaders-navbar .goodreaders-navbar-nav .nav-link:hover {
     color: #ff8900;
 }
 .navbar-toggler.button-light {
@@ -53,13 +53,26 @@ a:hover {
     padding: 0 10px;
     margin: 0 8px;
     font-size: 20px;
-    color: #ebe7e7;
 }
 .nav-link {
-    color: #ebe7e7;
     font-weight: 500;
+    transition: all 1s ease-in-out;
+    position: relative; 
 }
-
+.nav-link::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+}
+.nav-link:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    transition: all 1s  ease-in-out;
+}
 .btn-apply-now {
     font-family: "Abril Fatface", cursive;
     background-color: #ff8900;
@@ -251,10 +264,11 @@ a:hover {
     background: none;
     width: 14%;
     height: 50px;
-    transition: 1s all;
+    transition: 1s all ease-in-out;
 }
 .btn-resume:hover {
     color: #ff8900;
+    border: 2px #ff8900 solid;
 }
 .btn-resume::before{
     position: absolute;
@@ -265,6 +279,7 @@ a:hover {
     height: 100%;
     left: 0;
     top: 0;
+    transition: 1s all ease-in-out;
     width: 100%;
 }
 .btn-resume:hover::before {
@@ -629,9 +644,9 @@ a:hover {
 /* iphone SE Responsive */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
-    .common-padding {
-        padding: 50px 0;
-    }
+.common-padding {
+    padding: 50px 0;
+ }
 /* header part css */
 .header {
     height: 666px;
@@ -643,10 +658,7 @@ a:hover {
 .nav-item {
     background-color: #fff;  
 }
-.goodreaders-navbar-nav {
-    position: absolute;
-    z-index: -1;
-}
+
 /* footer part css */
 .footer .social-icon {
     padding: 10px;
