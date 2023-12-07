@@ -10,27 +10,10 @@ a:hover {
 .common-padding{
     padding: 75px 0; 
 }
-.header {
-    background-position: center;
-    background-image: url(../images/banner-bg.jpg);
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 753px;
-}
-.header::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgb(0 0 0 / 19%);
-}
 /* navbar part css */
 .goodreaders-navbar {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background-color: #fff;
     height: 100px;
     background-size: cover;
@@ -65,12 +48,12 @@ a:hover {
    
 }
 .goodreaders-navbar .goodreaders-navbar-nav a:hover {
-    background: #ff8900;
+    background: #ffb606;
     box-shadow: 0px 4px 0px 0px #ebe7e7;
 }
 .btn-apply-now {
     font-family: "Abril Fatface", cursive;
-    background-color: #ff8900;
+    background-color: #ffb606;
     color: #ebe7e7;
     font-size: 18px;
     font-weight: 600;
@@ -82,26 +65,38 @@ a:hover {
 }
 /* footer part css */
 .footer {
-    background-image: url(../images/navbar-bg.jpg);
+    background-image: url(../images/footer1.jpeg);
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+.footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000069;
 }
 .update {
     font-size: 25px;
     font-weight: 600;
     color: #ebe7e7;
+    z-index: 1;
+    position: relative;
 }
 .footer-subscribe {
     display: flex;
-    
+    z-index: 1;
+    position: relative;
 }
 .footer-subscribe #staticEmail {
     background-color: #ebe7e7;
-    color: rgb(129 31 170);
+    color: #07294d;
 }
 .btn-subscribe{
     font-family: "Abril Fatface", cursive;
-    background-color: #ff8900;
+    background-color: #ffb606;
     color: #ebe7e7;
     font-size: 18px;
     font-weight: 600;
@@ -110,6 +105,8 @@ a:hover {
 .social-icon {
     justify-content: center;
     display: flex;
+    z-index: 1;
+    position: relative;
 }
 .social-icon a {
     width: 40px;
@@ -117,43 +114,93 @@ a:hover {
 .social-icon-img {
     background-color: #fff;
     padding: 6px;
+    border-radius: 50%;
 }
 /* banner left part css */
+.banner{
+    background-position: center;
+    background-image: url(../images/banner-bg.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+    position: relative;
+}
+.banner::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 19%);
+}
+.banner-left {
+    padding: 50px 0 0 50px;
+    margin: 50px 0 0 50px;
+}
 .banner-left-text {
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     font-size: 40px;
-    padding-top: 50px;
-    margin-top: 50px;
     color: #ebe7e7;
     position: relative;
     z-index: 1;
-}
-/* banner right part css */
-.singup-form {
-    padding: 50px 0 0 25px;
-    margin-top: 50px;
-    position: relative;
-    z-index: 1;
+} 
+.banner-btn-div {
+    width: 70%;
 }
 .btn-singup {
     font-family: "Abril Fatface", cursive;
-    font-size: 18px;
-    font-weight: 600;
     position: relative;
     cursor: pointer;
-    box-shadow: 1px 2px 4px 1px rgb(129 31 170);
-    border: solid 2px rgba(255, 255, 255, 0.226);
-    transition: 1s ease-in-out;
-}
-.btn-singup a {
-    color: #ff8900;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    background: none;
+    width: 14%;
+    height: 50px;
+    transition: 1s all ease-in-out;
+    z-index: 1;
 }
 .btn-singup:hover {
-    color: rgb(129 31 170); 
-    background-color: #fff; 
-    box-shadow: none;
-} 
+    color: #0d0d0d;
+    background-color: #ebe5e5e8;
+}
+.btn-singup::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background-color: #07294d;
+    transition: 1s all;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 1s all ease-in-out;
+    width: 100%;
+}
+.btn-singup:hover::before {
+    height: 0;
+    transition: 1s all ease-in-out;
+}
+/* best platform part css */
+.best-platform-heading {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 40px;
+    color: #fff;
+}
+.best-platform-part {
+    background-color: #07294d;
+    height: 190px;
+}
+.best-platform-part-img {
+    padding: 24px;
+}
+.best-platform-text {
+    color: #fff;
+    padding: 5px;
+}
 /* welcome to e-learning part css */
 .e-lerning-paragraph {
     text-align: center;
@@ -172,9 +219,9 @@ a:hover {
 .e-learning-title {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .e-learning-details-logo {
@@ -185,15 +232,15 @@ a:hover {
 .e-learning-details-block-title {
     text-align: center;
     font-size: 22px;
-    color: rgb(129 31 170);
+    color: #07294d;
 }
 .program-heading {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
     text-align: center;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .program-text {
@@ -208,11 +255,38 @@ a:hover {
 .program-padding {
     padding: 30px;
 }
+/* now start */
+.now-start {
+    background-image: url(../images/background-img.jpg);
+    position: relative;
+}
+.now-start::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004a;
+}
+.now-start-paragraph {
+    position: relative;
+    z-index: 1;
+}
+.now-start-paragraph h1 {
+    color: #fff;
+}
+.now-start-paragraph p {
+    color: #fff;
+}
+.btn-now-start-div {
+    width: 120%;
+}
 /* execellent part css */
 .excellent-heading {
     font-weight: 700;
     font-size: 30px;
-    color: rgb(129 31 170);
+    color: #07294d;
     text-align: center;
 }
 .excellent-text {
@@ -225,6 +299,33 @@ a:hover {
     padding-left: 20px;
     font-size: 15px;
 }
+/* testimonial */
+.testimonial {
+    background-color: #07294d;
+    height: 300px;
+}
+.testimonial-heading {
+    padding-top: 50px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+.testimonial-text1 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.testimonial-text2 {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.testimonial-text3 {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 30px;
+}
 /* join our community */
 .community-paragraph {
     text-align: center;
@@ -232,9 +333,9 @@ a:hover {
 .community-heading {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .community-text {
@@ -257,14 +358,14 @@ a:hover {
     transition: 1s all ease-in-out;
 }
 .btn-resume:hover {
-    color: #ff8900;
-    border: 2px #ff8900 solid;
+    color: #0d0d0d;
+    background-color: #ebe5e5e8;
 }
 .btn-resume::before{
     position: absolute;
     content: "";
     z-index: -1;
-    background-color: rgb(129 31 170);
+    background-color: #07294d;
     transition: 1s all;
     height: 100%;
     left: 0;
@@ -274,14 +375,10 @@ a:hover {
 }
 .btn-resume:hover::before {
     height: 0;
+    transition: 1s all ease-in-out;
 }
 /* about.html page css */
 /* choose-us part css */
-.choose-us {
-    background-image: url('../images/gray-bg.jpg');
-    background-position: center;
-    background-size: cover;
-}
 .choose-us-paragraph {
     text-align: center;
     padding: 50px 0;
@@ -289,9 +386,9 @@ a:hover {
 .choose-us-title {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .choose-us-text {
@@ -309,14 +406,14 @@ a:hover {
     display: flex;
     align-items: center;
     font-size: 22px;
-    color:rgb(129 31 170);
+    color:#07294d;
     font-weight: 600;
     cursor: pointer;
 }
 .accordion li label::before {
     content: '+';
     font-weight: 600;font-size: 18px;
-    color:rgb(129 31 170);
+    color:#07294d;
     padding: 10px;
 }
 .accordion input[type='radio']{
@@ -334,7 +431,41 @@ a:hover {
     max-height: 400px;
     padding: 10px 10px 20px;
 }
-
+/* posibilities */
+.posibilities {
+    padding: 50px 0;
+}
+.posibilities-part {
+    background-color: #07294d;
+}
+.posibilities-paragtaph {
+    text-align: center;
+}
+.posibilities-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffb606;
+    padding-bottom: 20px;
+    text-decoration: underline #ffb606 2px;
+    text-underline-position: under;
+}
+.posibilities-text {
+    font-size: 17px;
+    color: #fff;
+}
+.posibilities-card {
+    padding-top: 50px;
+}
+.posibilities-card-box {
+    background: #fff;
+    padding: 20px;
+    box-shadow: #ffffff21 1px 3px 2px 1px;
+}
+.posibilities-card-box-title {
+    font-size: 25px;
+    text-align: center;
+    color: #07294d;
+}
 /* teacher.html page css */
 /* teacher details part css */
 .teacher-details {
@@ -343,9 +474,9 @@ a:hover {
 .teacher-details-title {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under; 
 }
 .teacher-text {
@@ -378,7 +509,7 @@ a:hover {
     color: #fff;
 }
 .teacher-social-id a:hover {
-    color:#ff8900;
+    color:#ffb606;
 }
 .teacher-info-details {
     width: 280px;
@@ -399,7 +530,7 @@ a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    background-color:rgb(55 55 66 / 61%);
+    background-color:rgb(22 22 23 / 61%);
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -427,19 +558,42 @@ a:hover {
 }
 
 /* courses.html page css */
-.courses {
-    background-image: url(../images/gray-bg.jpg);
+.course-banner {
+    background-image: url(../images/course-banner.jpg);
     background-position: center;
     background-size: cover;
-    padding-bottom: 50px;
+    height: 646px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course-banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   background-color: #000000a8;
+}
+.course-banner h1 {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-size: 80px;
+    z-index: 1;
+    position: relative;
+}
+.courses {
+    padding-top: 50px;
 }
 .our-courses {
     font-weight: 700;
     font-size: 40px;
     text-align: center;
-    color: #ff8900;
+    color: #ffb606;
     padding: 20px 0;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .course-card-padding {
@@ -450,13 +604,50 @@ a:hover {
     text-align: center;
     }
 .card-course-shadow h5 {
-    color: rgb(129 31 170);
+    color: #07294d;
     font-weight: 600;
     }
 .card-course-shadow p {
     font-size: 14px;
     }
-
+.course-card-buttom {
+    box-shadow: #f3eeee 4px 3px 5px 1px;
+}
+.author-fees {
+    background: #ffb606;
+    height: 48px;
+}
+.author-fees p {
+    padding: 9px 0;
+    color: #fff;
+    font-size: 20px;
+}
+.course_author_name {
+    padding: 0 5px;
+    font-size: 14px;
+}
+/* training */
+.training {
+    padding-left: 50px;
+    background-color: #07294d;
+}
+.training-paragraph {
+    height: 200px;
+    padding: 50px 0;
+}
+.training-text {
+    color: #fff;
+    font-size: 16px;
+}
+.training-heading {
+    color: #fff;
+    font-size: 18px;
+}
+.training-btn-div {
+    text-align: right;
+    padding-right: 50px;
+    margin-right: 50px;
+}
 /* contact.html page css */
 /* contact form part css */
 .contact-form-padding {
@@ -486,9 +677,9 @@ a:hover {
 .form-heading {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
     position: relative;
     z-index: 9;
@@ -510,17 +701,17 @@ a:hover {
     font-size: 18px;
     width: 35%;
     font-weight: 600;
-    background-color: #ff8900;
+    background-color: #ffb606;
     color: #ebe7e7;
-    border: solid 2px rgb(129 31 170);
+    border: solid 2px #07294d;
     box-shadow: 1px 1px 2px 1px #ebe7e745;
 }
 .contact-heading {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .contact-info-text {
@@ -530,7 +721,7 @@ a:hover {
     padding-top: 30px;
     font-size: 20px;
     font-weight: 600;
-    color: rgb(129 31 170);
+    color: #07294d;
 }
 .direct-line-phone {
     font-size: 40px;
@@ -554,9 +745,9 @@ a:hover {
 .event-heading {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .event-text {
@@ -566,7 +757,7 @@ a:hover {
 .event-date {
     text-align: center;
     font-size: 18px;
-    color: rgb(129 31 170);
+    color: #07294d;
     background-color: #fff;
     border: 2px solid #f3eeeede;
     height: 45px;
@@ -576,14 +767,83 @@ a:hover {
 .event-activity {
     text-align: center;
     font-size: 18px;
-    color: rgb(129 31 170);
+    color: #07294d;
     background-color: #fff;
     border: 2px solid #f3eeeede;
     height: 45px;
     padding: 5px;
     box-shadow: 1px 1px 3px 2px #fff9f9c2;
 }
-
+/* apply for */
+.apply-for {
+    padding-bottom: 50px;
+}
+.apply-for-box {
+    background-color: #07294d;
+}
+.apply-for-fall {
+    padding: 20px;
+}
+.apply-for-fall-title {
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+    text-decoration: underline #fff 2px;
+    text-underline-position: under;
+}
+.apply-for-fall-text {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.apply-for-scholarship-title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    padding-bottom: 20px;
+    text-decoration: underline #fff 2px;
+    text-underline-position: under;
+}
+.apply-for-scholarship-text {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.apply-for-button-div {
+    text-align: center;
+}
+/* upcoming event */
+.upcoming-event-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #ffb606;
+    padding-bottom: 20px;
+    text-decoration: underline #ffb606 2px;
+    text-underline-position: under;
+}
+.upcoming-event-box {
+    padding-bottom: 30px;
+}
+.upcoming-event-box-date-part {
+    background-color: #07294d;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.upcoming-event-box-date-part span {
+    font-size: 20px;
+}
+.upcoming-event-box-date-part p {
+    font-size: 20px;
+}
+.upcoming-event-box-body-part a {
+    color: black;
+    font-size: 20px;
+}
 /* admission.html page css */
 /* form right part css */
 .admission-form-section {
@@ -592,13 +852,33 @@ a:hover {
 .admission-title {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
     padding-bottom: 20px;
-    text-decoration: underline #ff8900 2px;
+    text-decoration: underline #ffb606 2px;
     text-underline-position: under;
 }
 .btn-admission-div {
     width: 155%;
+}
+/* eduwise */
+.eduwise {
+    background-color:#07294d;
+}
+.eduwise-paragrph {
+    text-align: center;
+    padding: 50px 0;
+}
+.eduwise-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 20px;
+    text-decoration: underline #fff 2px;
+    text-underline-position: under;
+}
+.eduwise-text {
+    font-size: 18px;
+    color: #fff;
 }
 
 /* news.html page css */
@@ -612,7 +892,7 @@ a:hover {
 .resume-heading {
     font-weight: 700;
     font-size: 40px;
-    color: #ff8900;
+    color: #ffb606;
 }
 .resume-text {
     font-size: 18px;
@@ -661,6 +941,9 @@ a:hover {
 .community-text {
     font-size: 13px;
 }
+.banner-btn-div {
+    width: 268%;
+}
 /* e-learning part css */
 .e-learning-hr-tag {
     width: 70%;
@@ -668,14 +951,15 @@ a:hover {
 .e-learning-title {
     font-size: 25px;
 }
+/* now start part css */
+.btn-now-start-div {
+    width: 142%;
+}
 /* about.html page css */
 .choose-us-title {
     font-size: 35px;
 }
 /* teacher.html page css */
-.teacher-details {
-    padding-top: 275px;
-}
 .teacher-info {
     padding-bottom: 20px;
     margin-bottom: 20px;
