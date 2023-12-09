@@ -12,10 +12,8 @@ a:hover {
 }
 /* navbar part css */
 .goodreaders-navbar {
-    position: relative;
-    z-index: 2;
     background-color: #fff;
-    height: 100px;
+    height: 99px;
     background-size: cover;
 }
 .goodreaders-navbar .goodreaders-navbar-nav .nav-link {
@@ -50,18 +48,6 @@ a:hover {
 .goodreaders-navbar .goodreaders-navbar-nav a:hover {
     background: #ffb606;
     box-shadow: 0px 4px 0px 0px #ebe7e7;
-}
-.btn-apply-now {
-    font-family: "Abril Fatface", cursive;
-    background-color: #ffb606;
-    color: #ebe7e7;
-    font-size: 18px;
-    font-weight: 600;
-    width: 120%;
-}
-.btn-apply-now-div {
-    margin-right: 20px;
-    padding-right: 20px;
 }
 /* footer part css */
 .footer {
@@ -149,39 +135,27 @@ a:hover {
 } 
 .banner-btn-div {
     width: 70%;
-}
-.btn-singup {
-    font-family: "Abril Fatface", cursive;
-    position: relative;
-    cursor: pointer;
-    font-size: 18px;
-    border: none;
-    color: #fff;
-    background: none;
-    width: 14%;
-    height: 50px;
-    transition: 1s all ease-in-out;
     z-index: 1;
+    position: relative;
+}
+.btn-singup{
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 26px;
+    color: #ffb606;
+    
 }
 .btn-singup:hover {
-    color: #0d0d0d;
-    background-color: #ebe5e5e8;
-}
-.btn-singup::before{
-    position: absolute;
-    content: "";
-    z-index: -1;
-    background-color: #07294d;
-    transition: 1s all;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transition: 1s all ease-in-out;
-    width: 100%;
-}
-.btn-singup:hover::before {
-    height: 0;
-    transition: 1s all ease-in-out;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #ffb606;
 }
 /* best platform part css */
 .best-platform-heading {
