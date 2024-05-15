@@ -9,4 +9,3 @@ $(window).scroll(function () {
       $(".goodreaders-navbar").removeClass("fixed-top");
     }
   });
-

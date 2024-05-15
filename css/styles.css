@@ -110,7 +110,7 @@ a:hover {
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 660px;
+    height: 550px;
     position: relative;
 }
 .banner::after {
@@ -537,7 +537,7 @@ a:hover {
     background-image: url(../images/course-banner.jpg);
     background-position: center;
     background-size: cover;
-    height: 646px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -635,17 +635,19 @@ a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
+    z-index: 1;
+    position: absolute;
 }
 .contact-form::after {
     position: absolute;
     content: '';
-    width: 95%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     top: 0;
-    left: 14px;
-    background-color: rgb(48 12 63 / 26%);
+    left: 0;
+    background-color: rgb(19 5 25 / 35%);
     z-index: 0;
-}
+    }
 .form-part{
     z-index: 1;
     position: relative;
