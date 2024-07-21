@@ -146,9 +146,9 @@ a:hover {
     outline-color: rgba(255, 255, 255, 0.5);
     outline-offset: 0px;
     text-shadow: none;
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
     font-size: 26px;
     color: #ffb606;
+    transition: 2.1s ease-in-out;
     
 }
 .btn-singup:hover {
@@ -233,6 +233,7 @@ a:hover {
 /* now start */
 .now-start {
     background-image: url(../images/background-img.jpg);
+    overflow: hidden;
     position: relative;
 }
 .now-start::after {
@@ -250,6 +251,7 @@ a:hover {
 }
 .now-start-paragraph h1 {
     color: #fff;
+    font-size: 35px;
 }
 .now-start-paragraph p {
     color: #fff;
@@ -445,6 +447,7 @@ a:hover {
 /* teacher details part css */
 .teacher-details {
     text-align: center;
+    margin-bottom: 50px;
 }
 .teacher-details-title {
     font-weight: 700;
@@ -463,7 +466,6 @@ a:hover {
     position: relative;
 }
 .teacher-div {
-    padding: 50px;
     text-align: center;
 }
 .teacher-name {
@@ -573,7 +575,7 @@ a:hover {
     text-underline-position: under;
 }
 .course-card-padding {
-    padding: 20px 20px;
+    margin-bottom: 25px;
     }
 .card-course-shadow {
     box-shadow: 1px 1px 8px 1px #ebe7e745;
@@ -636,7 +638,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat; 
     z-index: 1;
-    position: absolute;
+    position: relative;
 }
 .contact-form::after {
     position: absolute;
@@ -879,7 +881,7 @@ a:hover {
     padding-top: 50px;
 }
 
-/* iphone SE Responsive */
+/*********** Responsive ****************/
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
 .common-padding {
@@ -915,7 +917,7 @@ a:hover {
 }
 /* banner part css */
 .banner-left-text {
-    font-size: 32px;
+    font-size: 25px;
     padding: 0;
 }
 .singup-form {
@@ -927,8 +929,9 @@ a:hover {
 .community-text {
     font-size: 13px;
 }
-.banner-btn-div {
-    width: 268%;
+/* best plateform part css */
+.best-platform-part {
+    height: 685px;
 }
 /* e-learning part css */
 .e-learning-hr-tag {
@@ -939,21 +942,27 @@ a:hover {
 }
 /* now start part css */
 .btn-now-start-div {
-    width: 142%;
+    width: 145%;
 }
 /* about.html page css */
 .choose-us-title {
     font-size: 35px;
+}
+.posibilities-title {
+    font-size: 30px;
 }
 /* teacher.html page css */
 .teacher-info {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-
+/* courses page css */
+.training {
+    padding-left: 40px;
+}
 /* news page css */
 .btn-resume {
-    width: 40%;
+    width: 50%;
 }
 /* contact.html page css */
 .form-heading {
@@ -966,6 +975,6 @@ a:hover {
     width: 80%;
 }
 .form-heading {
-    font-size: 40px;
+    font-size: 30px;
 }
 }
